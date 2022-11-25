@@ -18,10 +18,10 @@ int main() {
     cout << "Number of digits in: " << n << " is: " << count_digit(n) << endl;
 
 
-    int digit[8] = {count_digit(n)};
+    int digit[8];
 
     //petla - rozbicie liczby na cyfry
-    for (int i = 0; i <= count_digit(n); i++)
+    for (int i = 0; i <= 7; i++)
     {
         digit[i] = n % 10;
         n = n / 10;
